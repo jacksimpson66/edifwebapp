@@ -4,76 +4,58 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-    display:flex;
-    align-items: center;
-    height: 15%;
+.header {
     background-color: #d51ee6;
     color: white;
 }
 
-header h1 {
-    flex: 7;
-    margin-top: 0;
+.header h1 {
     margin-bottom: 0;
-    margin-left: 3%;
 }
 
-header p {
+.header p {
     margin: 0;
     font-size: 22px;
-    flex: 1;
     text-align: right;
 }
 
-header .login_link {
+.header .login_link {
     font-weight: bold;
     font-size: 24px;
-    padding-left: 1%;
-    margin:auto;
-    flex:1;
 }
 
-header .sign_out_link {
+.header .sign_out_link {
     text-align: right;
     font-weight: bold;
     font-size: 24px;
     padding-right: 3%;
-    margin:auto;
-    flex:2;
 }
 
-header a {
+.header a {
     text-decoration: none;
     color: white;
 }
 
-header a:hover {
+.header a:hover {
     color: #f4a0ff;
 
 }
 
 .container {
-    position:relative;
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    margin-bottom: 50px;
+    margin-top: 10%;
 }
 
 .container h3 {
+    margin-top: 5%;
     font-size: 24px;
 }
 
-.container .form {
-    width: 60%;
-    margin: auto;
-}
 
-.container .form .form-element {
-    padding-top: 10px;
-}
 
+.my_form .form-element {
+    padding-top: 15px;
+}
+/*
 .container .form .form-element label {
     font-size: 20px;
     text-align: left;
@@ -93,7 +75,7 @@ header a:hover {
     width: 60%;
     margin-top: 15px;
 }
-
+*/
 
 .foot {
     background-color: #faf3fa;

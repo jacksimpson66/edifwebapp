@@ -4,31 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EDIF - Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>EDIF</h1>
-        <p>Want to Register?: </p>
-        <div class="login_link">
-            <a href="sign_up.html">Sign Up</a>
+    <div class = "header container-fluid fixed-top">
+        <div class="row align-items-center">
+            <div class="col-8">
+                <h1 class="text-white align-middle">EDIF</h1>
+            </div>
+            <div class="col-xxl-2 d-none d-xxl-block">
+                <p>Want to Register?: </p>
+            </div>
+            <div class="col-4 col-xxl-2 login_link text-end text-xxl-center">
+                <a href="sign_up.html">Sign Up</a>
+            </div>
         </div>
-    </header>
+    </div>
     <div class = "container">
-        <form class = "form" action = "index.html" method="POST">
-            <h3>Login Below Using Details</h3>
-            <div class = "form-element">
-                <label>Email:</label>
-                <input type="email" name="L_email">
+        <!-- <div class="row align-items-center">
+            <form class = "form" action = "index.html" method="POST">
+                <h3>Login Below Using Details</h3>
+                <div class = "form-element">
+                    <label>Email:</label>
+                    <input type="email" name="L_email">
+                </div>
+                <div class = "form-element">
+                    <label>Password:</label>
+                    <input type="password" name="L_password">
+                </div>
+                <input type="submit" name="L_submit" value="Submit">
+            </form>
+        </div> -->
+        <div class="row align-items-center">
+            <h3 class="text-center">Login Below!</h3>
+        </div>
+        <form class="my_form" action = "index.html" method="POST">
+            <div class="form-group form-element">
+                <label for="login_email">Email Address</label>
+                <input type="email" class="form-control" id="login_email" name="login_email" placeholder="Enter email">
             </div>
-            <div class = "form-element">
-                <label>Password:</label>
-                <input type="password" name="L_password">
+            <div class="form-group form-element">
+                <label for="login_password">Password</label>
+                <input type="password" class="form-control" id="login_password" name="login_password" placeholder="Password">
             </div>
-            <input type="submit" name="L_submit" value="Submit">
+            <div class="d-grid gap-2 form-element">
+                <button type="submit" class="btn btn-outline-secondary btn-block">Log In</button>
+            </div>
         </form>
     </div>
-    <footer class="foot">
+    <footer class="foot fixed-bottom">
         <p>Copyright WCHG Group &copy; 2021. Contact jegsie@hotmail.co.uk</p>
     </footer>
 </body>
